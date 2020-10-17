@@ -1,0 +1,7 @@
+TD 2:
+
+1. Math et random:
+	Chap 3. Ex: 1, 3, 6, 8, 13, 15.
+
+2. If:
+	Chap 4. Ex: 1, 3, 5, 9, 12.

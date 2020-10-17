@@ -1,0 +1,39 @@
+TD 1: TD d'introduction
+
+1. Print et variables basiques
+	Chap 1. Ex: 1, 2, 4, 5, 6, 8
+
+2. Boucle Pour
+	Chap 2. Ex: 1, 3, 4, 5, 6, 9, 10, 11, 12, 14
+
+3. Problème: Division posée
+	On souhaite réaliser un affichage d'une division décimale posée de 2 entiers, en n'utilisant que les opérations entières 
+	(+,-,*,//) et 1 boucle For. Le rendu doit être par exemple:
+
+
+		Entrer le dividende: 243
+		Entrer le diviseur: 17
+		Entrer la précision souhaitée: 8
+		
+		243        |17
+		--------------
+		  5        | 14
+ 		  16       |   2
+ 		    7      |    9
+ 		     2     |     4
+ 		      3    |      1
+ 		      13   |       1
+ 		       11  |        7
+  		         8 |         6
+
+	
+	3.a Créer un programme qui demande à l'utilisateur d'entrer successivement 3 nombres: Dividende, diviseur et précision.
+
+	3.b Faire s'afficher les 2 premières lignes de la division: celle des entrées et celle avec la ligne horizontale
+	On pourra utiliser les caractères - et | du clavier.
+	Pour ajuster les écarts on utilisera les fonctions len() et str(). 
+		Ex: len(str(123432)) vaut 6.
+
+	3.c Utiliser une boucle For pour réaliser les successives "soustractions" de la division.
+	Chaque ligne correspond à une division entière, on passera d'une ligne à l'autre en mettant à jour le dividende via
+	l'opération "rajouter un zéro".
