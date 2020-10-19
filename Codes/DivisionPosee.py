@@ -17,3 +17,6 @@ for i in range(1, 9):
         resultat += ","
     dividende = dividende % diviseur * 10
 print("\nResultat :",resultat)
+
+
+
