@@ -8,7 +8,7 @@ while precision < 0: #fiabilité du programme (précision toujours positive)
 resultat = ""
 
 print("\n",dividende," " * precision ,"|" ,diviseur ,sep="")
-print("--------------")
+print("--------------") "CORRIGER 
 
 for i in range(1, precision + 1):
     reste = dividende % diviseur
