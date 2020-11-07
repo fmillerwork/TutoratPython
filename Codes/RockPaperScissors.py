@@ -13,7 +13,7 @@ for i in range(5): # 5 rounds
 
     #pour rendre le programme plus fiable
     while playerChoice != 1 and playerChoice != 2 and playerChoice != 3: #check for input validity (1, 2 or 3)
-        playerChoice = int(input("Bad entry... Try something else :"))
+        playerChoice = int(input("Bad entry... Try something else : "))
 
     botChoice = randint(1,3)
 

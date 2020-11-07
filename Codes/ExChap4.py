@@ -14,12 +14,12 @@ else :
 
 if itemCost != 0:
     print(nbItems * itemCost)
-'''
+
 
 #Ex8
 #Année bisextile => divisible par 400
 #                => divisible par 4 et non par 100
-'''
+
 year = int(input("Enter a year : "))
 if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
     print(year, "is a leap year !")
