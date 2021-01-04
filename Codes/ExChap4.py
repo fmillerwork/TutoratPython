@@ -1,6 +1,6 @@
 from random import randint
+
 #Ex6
-'''
 nbItems = int(input("Items to buy ? "))
 itemCost = 0
 if nbItems < 10 and nbItems > 0:
@@ -25,10 +25,9 @@ if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
     print(year, "is a leap year !")
 else : 
     print(year, "is NOT a leap year !")
-'''
+
 
 #Ex10
-'''
 for i in range(10):
     nb1 = randint(1,9)
     nb2 = randint(1,9)
@@ -37,4 +36,3 @@ for i in range(10):
         print("Rigth !")
     else : 
         print("Wrong. The answer is ", nb1 * nb2)
-'''

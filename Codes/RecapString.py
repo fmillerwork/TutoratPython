@@ -1,7 +1,8 @@
 print("\n-----------String (chaîne de caractères)-----------")
-'''
+
 print("\nIntro :")
-#un string ou chaîne de caractères est un ensemble de caractères ("a", "(", "%", "4") => CF caractères ASCII
+
+#un string ou chaîne de caractères est un ensemble de caractères ("a", "(", "%", '4') => CF caractères ASCII
 
 Astring = "1000" #string
 Astring = '1000' #string    possible d'utiliser "" ou '' pour ouvrir le string et utiliser l'autre symbole comme caractère du string
@@ -20,8 +21,7 @@ chaineVide = "" #string vide
 a = "bonjour"
 print(len(a)) #affiche la longueur du string a (nombres de caractères)
 
-'''
-'''
+
 print("Concaténation et répétition :")
 
 #concaténation
@@ -29,9 +29,9 @@ a = "abc"
 b = "def"
 print(a + b)
 c = "abc" + "def" 
-print(a + b)
+print(c)
 
-#peut être utiliser pour construire des string au fur et à mesure d'un programme
+# peut être utiliser pour construire des string au fur et à mesure d'un programme
 # (DM1) la variable resultat est construite au fur et à mesure de l'écriture de la division posée
 
 dividende = eval(input("\nEntrer le dividende: "))
@@ -41,7 +41,7 @@ precision = eval(input("Entrer la précision souhaitée: "))
 resultat = ""
 
 #Affichage des 2 premières lignes ....
-
+'''
 for i in range(1, precision + 1):
     #calculs et affichages ....
     
@@ -51,14 +51,12 @@ for i in range(1, precision + 1):
     
     dividende = dividende % diviseur * 10
 print("\nResultat :",resultat)
-
+'''
 
 #répétition
 a = "a" * 4
 print(a)
 
-'''
-'''
 print("Opérateur in :")
 string = "bonjour"
 
@@ -67,8 +65,8 @@ if "a" in string: #vérifie chaque caractère du string à la recherche de "a". 
     print("le caractère 'a' est contenu dans le string")
 elif "j" in string: #idem mais avec "j"
     print("le caractère 'j' est contenu dans le string")
-'''
-'''
+
+
 print("Indexation (indexing):")
 string = "Hello world !"
 
@@ -81,8 +79,8 @@ print(string[-2]) #affiche l'avant dernier caractère. Ici, c'est le caractère 
 
 #Si l'indice dépasse la taille du string, le programme plante => IndexError : string index out of range
 #print(string[20])
-'''
-'''
+
+
 print("Partitionner (slice):")
 string = "bonjour à tous !"
 
@@ -93,25 +91,27 @@ print("string[5: ]   ",string[5:]) #affiche tous les caractères à partir de l'
 print("string[-2: ]   ",string[-2:]) #affiche les 2 dernier caractères
 print("string[ : ]   ",string[:]) #affiche toute la chaîne
 print("string[1:7:2]   ",string[1:7:2]) #affiche des indices 1 à 6 (7 est exclu) avec un pas de 2
+print("string[-10:-3]   ",string[-10:-3]) #affiche du caractère -10 au caractère -2 (car -3 exclus)
 print("string[ : :-1]   ",string[::-1]) #affiche la chaine dans le sens inverse
 print("string[ : :-2]   ",string[::-2]) #affiche la chaine dans le sens inverse avec un pas de 2
-'''
-'''
+print("string[-10:-3][::-1]   ",string[-10:-3][::-1]) #affiche du caractère -10 au caractère -2 (car -3 exclus) dans le sens inverse
+print("string[-4:-11:-1]  ",string[-4:-11:-1]) #affiche du caractère -4 au caractère -10 (car -11 exclus) dans le sens inverse. Idem ligne au dessus
+
+
 print("Changer les caractères d'un string :")
 #Dans l'absolu, c'est impossible.
 #Obligation de reconstruire un string en opérant les modif désirées.
 s1 = "coucou"
 s2 = s1[:3] + s1[4:] #en copie tous les caractères de s1 dans s2 sauf le second 'c'
 print(s1,s2,sep='\n')
-'''
-'''
+
 print("Dans les for (looping) :")
 
 string = "bonjour"
 for i in range(len(string)): #boucle for utilisant la longueur du string
     print(string[i])
-'''
-'''
+
+
 print("Fonctions sur les string :")
 #Definition : retourne => fournit la valeur
 
@@ -120,7 +120,7 @@ string = "COUCOU"
 print(string.lower())
 print(string,"\n")
 
-#x.lower()  => renvoie une nouvelle chaine dans tous les de x sont en majuscules
+#x.upper()  => renvoie une nouvelle chaine dans tous les de x sont en majuscules
 string = "coucou"
 print(string.upper())
 print(string,"\n")
@@ -140,8 +140,7 @@ if string.isalpha():
     print("La variable contient que des lettres")
 else:
     print("La variable ne contient pas que des lettres")
-'''
-'''
+
 print("Caractère d'échappement :")
 #le caractère '\' permet de changer le fonction de certains autres caractères.
 
@@ -150,5 +149,4 @@ print("\tHello world !") # \t => tabulation
 print("\"Hello world !\"") # \"" => permet d'écrire un " dans un string sans mettre fin à ce dernier (lorsqu'on utilise "" pour définir le string). Idem avec '
 print("Hello\\world ! ") # \\ => permet d'écrire '\' dans un string sans qu'il n'y ai d'ambiguiter
 print("Hello\world ! ") # ambiguité dans ce cas. Certains IDE le signale.
-'''
 
